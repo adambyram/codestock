@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D021E0151545055900048420 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D021E0141545055900048420 /* UIKit.framework */; };
+		D021E0171545055900048420 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D021E0161545055900048420 /* Foundation.framework */; };
+		D021E0191545055900048420 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D021E0181545055900048420 /* CoreGraphics.framework */; };
+		D021E01F1545055900048420 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D021E01D1545055900048420 /* InfoPlist.strings */; };
+		D021E0211545055900048420 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D021E0201545055900048420 /* main.m */; };
+		D021E0251545055900048420 /* CodeStockAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D021E0241545055900048420 /* CodeStockAppDelegate.m */; };
+		D021E02D1545055900048420 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D021E02C1545055900048420 /* SenTestingKit.framework */; };
+		D021E02E1545055900048420 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D021E0141545055900048420 /* UIKit.framework */; };
+		D021E02F1545055900048420 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D021E0161545055900048420 /* Foundation.framework */; };
+		D021E0371545055900048420 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D021E0351545055900048420 /* InfoPlist.strings */; };
+		D021E03A1545055900048420 /* CodeStockTestTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = D021E0391545055900048420 /* CodeStockTestTemplate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D021E0301545055900048420 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D021E0071545055800048420 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D021E00F1545055900048420;
+			remoteInfo = codestock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D021E0101545055900048420 /* codestock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = codestock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D021E0141545055900048420 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D021E0161545055900048420 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D021E0181545055900048420 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D021E01C1545055900048420 /* codestock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "codestock-Info.plist"; sourceTree = "<group>"; };
+		D021E01E1545055900048420 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D021E0201545055900048420 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D021E0221545055900048420 /* codestock-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "codestock-Prefix.pch"; sourceTree = "<group>"; };
+		D021E0231545055900048420 /* CodeStockAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeStockAppDelegate.h; sourceTree = "<group>"; };
+		D021E0241545055900048420 /* CodeStockAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeStockAppDelegate.m; sourceTree = "<group>"; };
+		D021E02B1545055900048420 /* codestockTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = codestockTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D021E02C1545055900048420 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D021E0341545055900048420 /* codestockTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "codestockTests-Info.plist"; sourceTree = "<group>"; };
+		D021E0361545055900048420 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D021E0391545055900048420 /* CodeStockTestTemplate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeStockTestTemplate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D021E00D1545055900048420 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D021E0151545055900048420 /* UIKit.framework in Frameworks */,
+				D021E0171545055900048420 /* Foundation.framework in Frameworks */,
+				D021E0191545055900048420 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D021E0271545055900048420 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D021E02D1545055900048420 /* SenTestingKit.framework in Frameworks */,
+				D021E02E1545055900048420 /* UIKit.framework in Frameworks */,
+				D021E02F1545055900048420 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D021E0051545055800048420 = {
+			isa = PBXGroup;
+			children = (
+				D021E01A1545055900048420 /* CodeStock */,
+				D021E0321545055900048420 /* CodeStockTests */,
+				D021E0131545055900048420 /* Frameworks */,
+				D021E0111545055900048420 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D021E0111545055900048420 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D021E0101545055900048420 /* codestock.app */,
+				D021E02B1545055900048420 /* codestockTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D021E0131545055900048420 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D021E0141545055900048420 /* UIKit.framework */,
+				D021E0161545055900048420 /* Foundation.framework */,
+				D021E0181545055900048420 /* CoreGraphics.framework */,
+				D021E02C1545055900048420 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D021E01A1545055900048420 /* CodeStock */ = {
+			isa = PBXGroup;
+			children = (
+				D060B3B2154507AB0001FDA6 /* Classes */,
+				D060B3B3154507AB0001FDA6 /* Resources */,
+				D021E0231545055900048420 /* CodeStockAppDelegate.h */,
+				D021E0241545055900048420 /* CodeStockAppDelegate.m */,
+				D021E01B1545055900048420 /* Supporting Files */,
+			);
+			name = CodeStock;
+			path = codestock;
+			sourceTree = "<group>";
+		};
+		D021E01B1545055900048420 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D021E01C1545055900048420 /* codestock-Info.plist */,
+				D021E01D1545055900048420 /* InfoPlist.strings */,
+				D021E0201545055900048420 /* main.m */,
+				D021E0221545055900048420 /* codestock-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D021E0321545055900048420 /* CodeStockTests */ = {
+			isa = PBXGroup;
+			children = (
+				D021E0391545055900048420 /* CodeStockTestTemplate.m */,
+				D021E0331545055900048420 /* Supporting Files */,
+			);
+			name = CodeStockTests;
+			path = codestockTests;
+			sourceTree = "<group>";
+		};
+		D021E0331545055900048420 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D021E0341545055900048420 /* codestockTests-Info.plist */,
+				D021E0351545055900048420 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D060B3B2154507AB0001FDA6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			path = CodeStock/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		D060B3B3154507AB0001FDA6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			path = CodeStock/Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D021E00F1545055900048420 /* CodeStock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D021E03D1545055900048420 /* Build configuration list for PBXNativeTarget "CodeStock" */;
+			buildPhases = (
+				D021E00C1545055900048420 /* Sources */,
+				D021E00D1545055900048420 /* Frameworks */,
+				D021E00E1545055900048420 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodeStock;
+			productName = codestock;
+			productReference = D021E0101545055900048420 /* codestock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D021E02A1545055900048420 /* CodeStockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D021E0401545055900048420 /* Build configuration list for PBXNativeTarget "CodeStockTests" */;
+			buildPhases = (
+				D021E0261545055900048420 /* Sources */,
+				D021E0271545055900048420 /* Frameworks */,
+				D021E0281545055900048420 /* Resources */,
+				D021E0291545055900048420 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D021E0311545055900048420 /* PBXTargetDependency */,
+			);
+			name = CodeStockTests;
+			productName = codestockTests;
+			productReference = D021E02B1545055900048420 /* codestockTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D021E0071545055800048420 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CO;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = D021E00A1545055800048420 /* Build configuration list for PBXProject "CodeStock for iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D021E0051545055800048420;
+			productRefGroup = D021E0111545055900048420 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D021E00F1545055900048420 /* CodeStock */,
+				D021E02A1545055900048420 /* CodeStockTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D021E00E1545055900048420 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D021E01F1545055900048420 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D021E0281545055900048420 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D021E0371545055900048420 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D021E0291545055900048420 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D021E00C1545055900048420 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D021E0211545055900048420 /* main.m in Sources */,
+				D021E0251545055900048420 /* CodeStockAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D021E0261545055900048420 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D021E03A1545055900048420 /* CodeStockTestTemplate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D021E0311545055900048420 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D021E00F1545055900048420 /* CodeStock */;
+			targetProxy = D021E0301545055900048420 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D021E01D1545055900048420 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D021E01E1545055900048420 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D021E0351545055900048420 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D021E0361545055900048420 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D021E03B1545055900048420 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D021E03C1545055900048420 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D021E03E1545055900048420 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "codestock/codestock-Prefix.pch";
+				INFOPLIST_FILE = "codestock/codestock-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D021E03F1545055900048420 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "codestock/codestock-Prefix.pch";
+				INFOPLIST_FILE = "codestock/codestock-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D021E0411545055900048420 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/codestock.app/codestock";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "codestock/codestock-Prefix.pch";
+				INFOPLIST_FILE = "codestockTests/codestockTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D021E0421545055900048420 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/codestock.app/codestock";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "codestock/codestock-Prefix.pch";
+				INFOPLIST_FILE = "codestockTests/codestockTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D021E00A1545055800048420 /* Build configuration list for PBXProject "CodeStock for iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D021E03B1545055900048420 /* Debug */,
+				D021E03C1545055900048420 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D021E03D1545055900048420 /* Build configuration list for PBXNativeTarget "CodeStock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D021E03E1545055900048420 /* Debug */,
+				D021E03F1545055900048420 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D021E0401545055900048420 /* Build configuration list for PBXNativeTarget "CodeStockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D021E0411545055900048420 /* Debug */,
+				D021E0421545055900048420 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D021E0071545055800048420 /* Project object */;
+}
