@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface COSessionListViewController : UITableViewController
+@interface COSessionListViewController : UITableViewController <UISearchBarDelegate>
 
 @property (strong, nonatomic) NSArray *sessionList;
 

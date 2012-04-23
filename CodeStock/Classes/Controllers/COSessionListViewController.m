@@ -26,6 +26,41 @@
     return self;
 }
 
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+    NSMutableArray *filteredSearchResults = [[NSMutableArray alloc] init];
+    for(id item in [[CODataManager sharedInstance] sessionList])
+    {
+        NSRange substringLocation = [[[item objectForKey:@"Title"] lowercaseString] rangeOfString:[searchBar.text lowercaseString]];
+        if(substringLocation.location != NSNotFound)
+        {
+            [filteredSearchResults addObject:[item copy]];
+        }
+    }
+    self.sessionList = filteredSearchResults;
+    [self.tableView reloadData];
+    [searchBar resignFirstResponder];
+}
+
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
+{
+    if([searchText isEqualToString:@""])
+    {
+        self.sessionList = [[[CODataManager sharedInstance] sessionList] copy];
+        [self.tableView reloadData];
+        [searchBar resignFirstResponder];
+    }
+}
+
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+{
+    self.sessionList = [[[CODataManager sharedInstance] sessionList] copy];
+    [self.tableView reloadData];
+    [searchBar resignFirstResponder];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -52,6 +87,7 @@
 {
     self.sessionList = [[[CODataManager sharedInstance] sessionList] copy];
     [self.tableView reloadData];
+    [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:NO];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
