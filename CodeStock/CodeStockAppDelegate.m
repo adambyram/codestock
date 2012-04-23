@@ -24,14 +24,17 @@
     UINavigationController *sessionListController = [[UINavigationController alloc] initWithRootViewController:[[COSessionListViewController alloc] initWithNibName:@"COSessionListViewController" bundle:nil]];
     [sessionListController.navigationBar setBarStyle:UIBarStyleBlackOpaque];
     sessionListController.tabBarItem.title = @"Sessions";
+    sessionListController.tabBarItem.image = [UIImage imageNamed:@"Sessions.png"];
     
     UINavigationController *speakerListController = [[UINavigationController alloc] initWithRootViewController:[[COSpeakerListViewController alloc] initWithNibName:@"COSpeakerListViewController" bundle:nil]];
     [speakerListController.navigationBar setBarStyle:UIBarStyleBlackOpaque];
     speakerListController.tabBarItem.title = @"Speakers";
+    speakerListController.tabBarItem.image = [UIImage imageNamed:@"Speakers.png"];
     
     UINavigationController *roomListController = [[UINavigationController alloc] initWithRootViewController:[[CORoomListViewController alloc] initWithNibName:@"CORoomListViewController" bundle:nil]];
     [roomListController.navigationBar setBarStyle:UIBarStyleBlackOpaque];
     roomListController.tabBarItem.title = @"Rooms";
+    roomListController.tabBarItem.image = [UIImage imageNamed:@"Rooms.png"];
     
     self.tabBarController = [[UITabBarController alloc] init];
     [self.tabBarController setViewControllers:[NSArray arrayWithObjects:sessionListController, speakerListController, roomListController, nil]];

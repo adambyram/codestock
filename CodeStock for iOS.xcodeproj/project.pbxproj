@@ -56,6 +56,9 @@
 		D060B41315450EFD0001FDA6 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D060B3FB15450EFD0001FDA6 /* SVProgressHUD.bundle */; };
 		D060B41415450EFD0001FDA6 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D060B3FD15450EFD0001FDA6 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D060B41515450EFD0001FDA6 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D060B3FD15450EFD0001FDA6 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D088BC7D15451BAB0083812E /* Rooms.png in Resources */ = {isa = PBXBuildFile; fileRef = D088BC7A15451BAB0083812E /* Rooms.png */; };
+		D088BC7E15451BAB0083812E /* Sessions.png in Resources */ = {isa = PBXBuildFile; fileRef = D088BC7B15451BAB0083812E /* Sessions.png */; };
+		D088BC7F15451BAB0083812E /* Speakers.png in Resources */ = {isa = PBXBuildFile; fileRef = D088BC7C15451BAB0083812E /* Speakers.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +122,9 @@
 		D060B3FB15450EFD0001FDA6 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		D060B3FC15450EFD0001FDA6 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		D060B3FD15450EFD0001FDA6 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		D088BC7A15451BAB0083812E /* Rooms.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rooms.png; sourceTree = "<group>"; };
+		D088BC7B15451BAB0083812E /* Sessions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sessions.png; sourceTree = "<group>"; };
+		D088BC7C15451BAB0083812E /* Speakers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Speakers.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +241,7 @@
 		D060B3B3154507AB0001FDA6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D088BC7915451BAB0083812E /* Tab Bar Icons */,
 			);
 			name = Resources;
 			path = CodeStock/Resources;
@@ -334,6 +341,16 @@
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
+		D088BC7915451BAB0083812E /* Tab Bar Icons */ = {
+			isa = PBXGroup;
+			children = (
+				D088BC7A15451BAB0083812E /* Rooms.png */,
+				D088BC7B15451BAB0083812E /* Sessions.png */,
+				D088BC7C15451BAB0083812E /* Speakers.png */,
+			);
+			path = "Tab Bar Icons";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -410,6 +427,9 @@
 				D060B3D515450BE20001FDA6 /* COSpeakerListViewController.xib in Resources */,
 				D060B3DC15450C0F0001FDA6 /* CORoomListViewController.xib in Resources */,
 				D060B41215450EFD0001FDA6 /* SVProgressHUD.bundle in Resources */,
+				D088BC7D15451BAB0083812E /* Rooms.png in Resources */,
+				D088BC7E15451BAB0083812E /* Sessions.png in Resources */,
+				D088BC7F15451BAB0083812E /* Speakers.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
