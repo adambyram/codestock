@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CodeStockAppDelegate : UIResponder <UIApplicationDelegate>
+@interface CodeStockAppDelegate : UIResponder <UIApplicationDelegate,UITabBarControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UITabBarController* tabBarController;
 
 @end

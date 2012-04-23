@@ -7,18 +7,46 @@
 //
 
 #import "CodeStockAppDelegate.h"
+#import "COSpeakerListViewController.h"
+#import "COSessionListViewController.h"
+#import "CORoomListViewController.h"
+#import "CODataManager.h"
 
 @implementation CodeStockAppDelegate
 
 @synthesize window = _window;
+@synthesize tabBarController = _tabBarController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+
+    UINavigationController *sessionListController = [[UINavigationController alloc] initWithRootViewController:[[COSessionListViewController alloc] initWithNibName:@"COSessionListViewController" bundle:nil]];
+    [sessionListController.navigationBar setBarStyle:UIBarStyleBlackOpaque];
+    sessionListController.tabBarItem.title = @"Sessions";
+    
+    UINavigationController *speakerListController = [[UINavigationController alloc] initWithRootViewController:[[COSpeakerListViewController alloc] initWithNibName:@"COSpeakerListViewController" bundle:nil]];
+    [speakerListController.navigationBar setBarStyle:UIBarStyleBlackOpaque];
+    speakerListController.tabBarItem.title = @"Speakers";
+    
+    UINavigationController *roomListController = [[UINavigationController alloc] initWithRootViewController:[[CORoomListViewController alloc] initWithNibName:@"CORoomListViewController" bundle:nil]];
+    [roomListController.navigationBar setBarStyle:UIBarStyleBlackOpaque];
+    roomListController.tabBarItem.title = @"Rooms";
+    
+    self.tabBarController = [[UITabBarController alloc] init];
+    [self.tabBarController setViewControllers:[NSArray arrayWithObjects:sessionListController, speakerListController, roomListController, nil]];
+    self.tabBarController.delegate = self;
+    self.window.rootViewController = self.tabBarController;
+
+    [self performSelector:@selector(startDataManager) withObject:nil afterDelay:0.1];
+    
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)startDataManager
+{
+    [[CODataManager sharedInstance] startup];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
