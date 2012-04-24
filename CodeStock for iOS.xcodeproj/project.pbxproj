@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D0188D8D1546219700129D1B /* COSessionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0188D8C1546219700129D1B /* COSessionCell.m */; };
 		D0188D90154621B800129D1B /* COSessionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0188D8F154621B800129D1B /* COSessionCell.xib */; };
+		D0188D941546356B00129D1B /* COSessionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0188D921546356B00129D1B /* COSessionDetailViewController.m */; };
+		D0188D951546356B00129D1B /* COSessionDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0188D931546356B00129D1B /* COSessionDetailViewController.xib */; };
 		D021E0151545055900048420 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D021E0141545055900048420 /* UIKit.framework */; };
 		D021E0171545055900048420 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D021E0161545055900048420 /* Foundation.framework */; };
 		D021E0191545055900048420 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D021E0181545055900048420 /* CoreGraphics.framework */; };
@@ -77,6 +79,9 @@
 		D0188D8B1546219700129D1B /* COSessionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COSessionCell.h; sourceTree = "<group>"; };
 		D0188D8C1546219700129D1B /* COSessionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COSessionCell.m; sourceTree = "<group>"; };
 		D0188D8F154621B800129D1B /* COSessionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = COSessionCell.xib; sourceTree = "<group>"; };
+		D0188D911546356B00129D1B /* COSessionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COSessionDetailViewController.h; sourceTree = "<group>"; };
+		D0188D921546356B00129D1B /* COSessionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COSessionDetailViewController.m; sourceTree = "<group>"; };
+		D0188D931546356B00129D1B /* COSessionDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = COSessionDetailViewController.xib; sourceTree = "<group>"; };
 		D021E0101545055900048420 /* CodeStock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeStock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D021E0141545055900048420 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D021E0161545055900048420 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -264,6 +269,9 @@
 				D060B3D715450C0F0001FDA6 /* CORoomListViewController.h */,
 				D060B3D815450C0F0001FDA6 /* CORoomListViewController.m */,
 				D060B3D915450C0F0001FDA6 /* CORoomListViewController.xib */,
+				D0188D911546356B00129D1B /* COSessionDetailViewController.h */,
+				D0188D921546356B00129D1B /* COSessionDetailViewController.m */,
+				D0188D931546356B00129D1B /* COSessionDetailViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -439,6 +447,7 @@
 				D088BC7E15451BAB0083812E /* Sessions.png in Resources */,
 				D088BC7F15451BAB0083812E /* Speakers.png in Resources */,
 				D0188D90154621B800129D1B /* COSessionCell.xib in Resources */,
+				D0188D951546356B00129D1B /* COSessionDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +504,7 @@
 				D060B41015450EFD0001FDA6 /* UIImageView+AFNetworking.m in Sources */,
 				D060B41415450EFD0001FDA6 /* SVProgressHUD.m in Sources */,
 				D0188D8D1546219700129D1B /* COSessionCell.m in Sources */,
+				D0188D941546356B00129D1B /* COSessionDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@
 #import "COSessionListViewController.h"
 #import "CODataManager.h"
 #import "COSessionCell.h"
+#import "COSessionDetailViewController.h"
 
 @interface COSessionListViewController ()
 
@@ -172,13 +173,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    COSessionDetailViewController* detailController = [[COSessionDetailViewController alloc] initWithNibName:@"COSessionDetailViewController" bundle:nil];
+    detailController.sessionDetail = [self.sessionList objectAtIndex:[indexPath row]];
+    [self.navigationController pushViewController:detailController animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end
