@@ -32,8 +32,14 @@
 {
     [super viewDidLoad];
     self.fullName.text = [self.speakerDetail objectForKey:@"Name"];
-    self.bio.text = [self.speakerDetail objectForKey:@"Bio"];
-    self.photo.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: [self.speakerDetail objectForKey:@"PhotoUrl"]]]];
+    if([self.speakerDetail objectForKey:@"Bio"] != [NSNull null])
+    {
+        self.bio.text = [self.speakerDetail objectForKey:@"Bio"];
+    }
+    if([self.speakerDetail objectForKey:@"PhotoUrl"] != [NSNull null])
+    {
+        self.photo.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: [self.speakerDetail objectForKey:@"PhotoUrl"]]]];
+    }
 }
 
 - (void)viewDidUnload
