@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0188D8D1546219700129D1B /* COSessionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0188D8C1546219700129D1B /* COSessionCell.m */; };
+		D0188D90154621B800129D1B /* COSessionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0188D8F154621B800129D1B /* COSessionCell.xib */; };
 		D021E0151545055900048420 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D021E0141545055900048420 /* UIKit.framework */; };
 		D021E0171545055900048420 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D021E0161545055900048420 /* Foundation.framework */; };
 		D021E0191545055900048420 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D021E0181545055900048420 /* CoreGraphics.framework */; };
@@ -72,6 +74,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D0188D8B1546219700129D1B /* COSessionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COSessionCell.h; sourceTree = "<group>"; };
+		D0188D8C1546219700129D1B /* COSessionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COSessionCell.m; sourceTree = "<group>"; };
+		D0188D8F154621B800129D1B /* COSessionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = COSessionCell.xib; sourceTree = "<group>"; };
 		D021E0101545055900048420 /* CodeStock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeStock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D021E0141545055900048420 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D021E0161545055900048420 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -273,6 +278,9 @@
 		D060B3B6154509480001FDA6 /* TableCells */ = {
 			isa = PBXGroup;
 			children = (
+				D0188D8B1546219700129D1B /* COSessionCell.h */,
+				D0188D8C1546219700129D1B /* COSessionCell.m */,
+				D0188D8F154621B800129D1B /* COSessionCell.xib */,
 			);
 			path = TableCells;
 			sourceTree = "<group>";
@@ -430,6 +438,7 @@
 				D088BC7D15451BAB0083812E /* Rooms.png in Resources */,
 				D088BC7E15451BAB0083812E /* Sessions.png in Resources */,
 				D088BC7F15451BAB0083812E /* Speakers.png in Resources */,
+				D0188D90154621B800129D1B /* COSessionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +494,7 @@
 				D060B40E15450EFD0001FDA6 /* AFXMLRequestOperation.m in Sources */,
 				D060B41015450EFD0001FDA6 /* UIImageView+AFNetworking.m in Sources */,
 				D060B41415450EFD0001FDA6 /* SVProgressHUD.m in Sources */,
+				D0188D8D1546219700129D1B /* COSessionCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

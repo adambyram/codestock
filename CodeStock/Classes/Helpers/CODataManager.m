@@ -28,8 +28,8 @@
 
 - (void)startup
 {
-    [SVProgressHUD showWithStatus:@"Loading..."];
-    [self loadSessionList];
+    [SVProgressHUD showWithStatus:@"Loading"];
+    [self loadSpeakerList];
 }
 
 - (void)loadSessionList
@@ -38,14 +38,32 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
         NSArray *sessionArray = [JSON valueForKeyPath:@"d"];
-        self.sessionList = [sessionArray mutableCopy];
+        self.sessionList = [[NSMutableArray alloc] init];
+        
+        for(id session in sessionArray)
+        {
+            NSMutableDictionary *mutableSession = [session mutableCopy];
+            [mutableSession setObject:[self speakerForId:[session objectForKey:@"SpeakerID"]] forKey:@"Speaker"];
+            [self.sessionList addObject:mutableSession];
+        }
+        
         dispatch_async(dispatch_get_main_queue(), ^{
             [self sessionListLoaded];
-            [self loadSpeakerList];
+            [self finishedLoading];
         });
         
     } failure:nil];
     [operation start];
+}
+
+- (id)speakerForId:(NSNumber*)speakerId
+{
+    for(id speaker in self.speakerList)
+    {
+        if([[speaker objectForKey:@"SpeakerID"] compare:speakerId] == NSOrderedSame)
+            return speaker;
+    }
+    return nil;
 }
 
 - (void)loadSpeakerList
@@ -73,7 +91,7 @@
         self.roomList = [roomArray mutableCopy];
         dispatch_async(dispatch_get_main_queue(), ^{
             [self roomListLoaded];
-            [self finishedLoading];
+            [self loadSessionList];
         });
         
     } failure:nil];
@@ -97,7 +115,7 @@
 
 - (void)finishedLoading
 {
-    [SVProgressHUD dismissWithSuccess:@"Loaded."];
+    [SVProgressHUD dismissWithSuccess:@"Done"];
 }
 
 @end

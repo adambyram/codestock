@@ -8,6 +8,7 @@
 
 #import "COSessionListViewController.h"
 #import "CODataManager.h"
+#import "COSessionCell.h"
 
 @interface COSessionListViewController ()
 
@@ -107,16 +108,23 @@
     return [self.sessionList count];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 55.0;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    COSessionCell *cell = (COSessionCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if(cell == nil)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
+        cell = (COSessionCell*)[[[NSBundle mainBundle] loadNibNamed:@"COSessionCell" owner:self options:nil] objectAtIndex:0];
     }
     
-    cell.textLabel.text = [[self.sessionList objectAtIndex:[indexPath row]] objectForKey:@"Title"];
+    cell.title.text = [[self.sessionList objectAtIndex:[indexPath row]] objectForKey:@"Title"];
+    cell.speaker.text = [[[self.sessionList objectAtIndex:[indexPath row]] objectForKey:@"Speaker"] objectForKey:@"Name"];
+    cell.level.text = [[self.sessionList objectAtIndex:[indexPath row]] objectForKey:@"LevelGeneral"];
     
     return cell;
 }
