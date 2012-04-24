@@ -11,6 +11,8 @@
 		D0188D90154621B800129D1B /* COSessionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0188D8F154621B800129D1B /* COSessionCell.xib */; };
 		D0188D941546356B00129D1B /* COSessionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0188D921546356B00129D1B /* COSessionDetailViewController.m */; };
 		D0188D951546356B00129D1B /* COSessionDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0188D931546356B00129D1B /* COSessionDetailViewController.xib */; };
+		D0188DA51546601200129D1B /* COSpeakerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0188DA31546601200129D1B /* COSpeakerDetailViewController.m */; };
+		D0188DA61546601200129D1B /* COSpeakerDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0188DA41546601200129D1B /* COSpeakerDetailViewController.xib */; };
 		D021E0151545055900048420 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D021E0141545055900048420 /* UIKit.framework */; };
 		D021E0171545055900048420 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D021E0161545055900048420 /* Foundation.framework */; };
 		D021E0191545055900048420 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D021E0181545055900048420 /* CoreGraphics.framework */; };
@@ -82,6 +84,9 @@
 		D0188D911546356B00129D1B /* COSessionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COSessionDetailViewController.h; sourceTree = "<group>"; };
 		D0188D921546356B00129D1B /* COSessionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COSessionDetailViewController.m; sourceTree = "<group>"; };
 		D0188D931546356B00129D1B /* COSessionDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = COSessionDetailViewController.xib; sourceTree = "<group>"; };
+		D0188DA21546601200129D1B /* COSpeakerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COSpeakerDetailViewController.h; sourceTree = "<group>"; };
+		D0188DA31546601200129D1B /* COSpeakerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COSpeakerDetailViewController.m; sourceTree = "<group>"; };
+		D0188DA41546601200129D1B /* COSpeakerDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = COSpeakerDetailViewController.xib; sourceTree = "<group>"; };
 		D021E0101545055900048420 /* CodeStock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeStock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D021E0141545055900048420 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D021E0161545055900048420 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -272,6 +277,9 @@
 				D0188D911546356B00129D1B /* COSessionDetailViewController.h */,
 				D0188D921546356B00129D1B /* COSessionDetailViewController.m */,
 				D0188D931546356B00129D1B /* COSessionDetailViewController.xib */,
+				D0188DA21546601200129D1B /* COSpeakerDetailViewController.h */,
+				D0188DA31546601200129D1B /* COSpeakerDetailViewController.m */,
+				D0188DA41546601200129D1B /* COSpeakerDetailViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -448,6 +456,7 @@
 				D088BC7F15451BAB0083812E /* Speakers.png in Resources */,
 				D0188D90154621B800129D1B /* COSessionCell.xib in Resources */,
 				D0188D951546356B00129D1B /* COSessionDetailViewController.xib in Resources */,
+				D0188DA61546601200129D1B /* COSpeakerDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +514,7 @@
 				D060B41415450EFD0001FDA6 /* SVProgressHUD.m in Sources */,
 				D0188D8D1546219700129D1B /* COSessionCell.m in Sources */,
 				D0188D941546356B00129D1B /* COSessionDetailViewController.m in Sources */,
+				D0188DA51546601200129D1B /* COSpeakerDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
