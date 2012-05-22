@@ -44,6 +44,8 @@
         {
             NSMutableDictionary *mutableSession = [session mutableCopy];
             [mutableSession setObject:[self speakerForId:[session objectForKey:@"SpeakerID"]] forKey:@"Speaker"];
+            [mutableSession setObject:[self getDateFromJSON:[mutableSession objectForKey:@"StartTime"]] forKey:@"StartTime"];
+            [mutableSession setObject:[self getDateFromJSON:[mutableSession objectForKey:@"EndTime"]] forKey:@"EndTime"];
             [self.sessionList addObject:mutableSession];
         }
         
@@ -116,6 +118,46 @@
 - (void)finishedLoading
 {
     [SVProgressHUD dismissWithSuccess:@"Done"];
+    [self buildRoomSessions];
+}
+
+- (void)buildRoomSessions
+{
+    NSMutableDictionary* roomDictionary = [[NSMutableDictionary alloc] init];
+    for(id session in self.sessionList)
+    {
+        NSString* roomName = [session valueForKey:@"Room"];
+        NSMutableArray* roomSessionList = [roomDictionary valueForKey:roomName];
+        if( roomSessionList == nil)
+        {
+            roomSessionList = [[NSMutableArray alloc] init];
+            [roomDictionary setValue:roomSessionList forKey:roomName];
+        }
+        [roomSessionList addObject:session];
+    }
+    
+    for(id roomKey in [[roomDictionary allKeys] sortedArrayUsingSelector:@selector(compare:)])
+    {
+        NSLog(@"Room %@",roomKey);
+        NSSortDescriptor *sessionTimeSort = [[NSSortDescriptor alloc] initWithKey:@"StartTime" ascending:YES];
+
+        for(id session in [[roomDictionary valueForKey:roomKey] sortedArrayUsingDescriptors:[NSArray arrayWithObject:sessionTimeSort]])
+        {
+            NSLog(@"\tSession %@",[session valueForKey:@"Title"]);
+            NSLog(@"\t%@",[session valueForKey:@"StartTime"]);
+            NSLog(@"\t%@\n",[session valueForKey:@"EndTime"]);
+        }
+    }
+}
+
+- (NSDate*) getDateFromJSON:(NSString *)dateString
+{
+    int startPos = [dateString rangeOfString:@"("].location+1;
+    int endPos = [dateString rangeOfString:@"-"].location;
+    NSRange range = NSMakeRange(startPos,endPos-startPos);
+    unsigned long long milliseconds = [[dateString substringWithRange:range] longLongValue];
+    NSTimeInterval interval = milliseconds/1000;
+    return [NSDate dateWithTimeIntervalSince1970:interval];
 }
 
 @end
