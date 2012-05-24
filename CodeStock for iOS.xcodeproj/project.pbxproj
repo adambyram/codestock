@@ -62,6 +62,9 @@
 		D060B41315450EFD0001FDA6 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D060B3FB15450EFD0001FDA6 /* SVProgressHUD.bundle */; };
 		D060B41415450EFD0001FDA6 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D060B3FD15450EFD0001FDA6 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D060B41515450EFD0001FDA6 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D060B3FD15450EFD0001FDA6 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D070B06D156B70A2005F4CEA /* COScheduleViewControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D070B06B156B70A2005F4CEA /* COScheduleViewControllerViewController.m */; };
+		D070B06E156B70A2005F4CEA /* COScheduleViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D070B06C156B70A2005F4CEA /* COScheduleViewControllerViewController.xib */; };
+		D070B071156B7358005F4CEA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D070B070156B7358005F4CEA /* QuartzCore.framework */; };
 		D088BC7D15451BAB0083812E /* Rooms.png in Resources */ = {isa = PBXBuildFile; fileRef = D088BC7A15451BAB0083812E /* Rooms.png */; };
 		D088BC7E15451BAB0083812E /* Sessions.png in Resources */ = {isa = PBXBuildFile; fileRef = D088BC7B15451BAB0083812E /* Sessions.png */; };
 		D088BC7F15451BAB0083812E /* Speakers.png in Resources */ = {isa = PBXBuildFile; fileRef = D088BC7C15451BAB0083812E /* Speakers.png */; };
@@ -137,6 +140,10 @@
 		D060B3FB15450EFD0001FDA6 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		D060B3FC15450EFD0001FDA6 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		D060B3FD15450EFD0001FDA6 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		D070B06A156B70A2005F4CEA /* COScheduleViewControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COScheduleViewControllerViewController.h; sourceTree = "<group>"; };
+		D070B06B156B70A2005F4CEA /* COScheduleViewControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COScheduleViewControllerViewController.m; sourceTree = "<group>"; };
+		D070B06C156B70A2005F4CEA /* COScheduleViewControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = COScheduleViewControllerViewController.xib; sourceTree = "<group>"; };
+		D070B070156B7358005F4CEA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D088BC7A15451BAB0083812E /* Rooms.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rooms.png; sourceTree = "<group>"; };
 		D088BC7B15451BAB0083812E /* Sessions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sessions.png; sourceTree = "<group>"; };
 		D088BC7C15451BAB0083812E /* Speakers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Speakers.png; sourceTree = "<group>"; };
@@ -147,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D070B071156B7358005F4CEA /* QuartzCore.framework in Frameworks */,
 				D021E0151545055900048420 /* UIKit.framework in Frameworks */,
 				D021E0171545055900048420 /* Foundation.framework in Frameworks */,
 				D021E0191545055900048420 /* CoreGraphics.framework in Frameworks */,
@@ -169,6 +177,7 @@
 		D021E0051545055800048420 = {
 			isa = PBXGroup;
 			children = (
+				D070B070156B7358005F4CEA /* QuartzCore.framework */,
 				D021E01A1545055900048420 /* CodeStock */,
 				D021E0321545055900048420 /* CodeStockTests */,
 				D021E0131545055900048420 /* Frameworks */,
@@ -280,6 +289,9 @@
 				D0188DA21546601200129D1B /* COSpeakerDetailViewController.h */,
 				D0188DA31546601200129D1B /* COSpeakerDetailViewController.m */,
 				D0188DA41546601200129D1B /* COSpeakerDetailViewController.xib */,
+				D070B06A156B70A2005F4CEA /* COScheduleViewControllerViewController.h */,
+				D070B06B156B70A2005F4CEA /* COScheduleViewControllerViewController.m */,
+				D070B06C156B70A2005F4CEA /* COScheduleViewControllerViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -457,6 +469,7 @@
 				D0188D90154621B800129D1B /* COSessionCell.xib in Resources */,
 				D0188D951546356B00129D1B /* COSessionDetailViewController.xib in Resources */,
 				D0188DA61546601200129D1B /* COSpeakerDetailViewController.xib in Resources */,
+				D070B06E156B70A2005F4CEA /* COScheduleViewControllerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +528,7 @@
 				D0188D8D1546219700129D1B /* COSessionCell.m in Sources */,
 				D0188D941546356B00129D1B /* COSessionDetailViewController.m in Sources */,
 				D0188DA51546601200129D1B /* COSpeakerDetailViewController.m in Sources */,
+				D070B06D156B70A2005F4CEA /* COScheduleViewControllerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

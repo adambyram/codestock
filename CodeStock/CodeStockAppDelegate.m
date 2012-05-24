@@ -11,6 +11,7 @@
 #import "COSessionListViewController.h"
 #import "CORoomListViewController.h"
 #import "CODataManager.h"
+#import "COScheduleViewControllerViewController.h"
 
 @implementation CodeStockAppDelegate
 
@@ -21,6 +22,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
+    /*
     UINavigationController *sessionListController = [[UINavigationController alloc] initWithRootViewController:[[COSessionListViewController alloc] initWithNibName:@"COSessionListViewController" bundle:nil]];
     [sessionListController.navigationBar setBarStyle:UIBarStyleBlackOpaque];
     sessionListController.tabBarItem.title = @"Sessions";
@@ -40,6 +42,8 @@
     [self.tabBarController setViewControllers:[NSArray arrayWithObjects:sessionListController, speakerListController, roomListController, nil]];
     self.tabBarController.delegate = self;
     self.window.rootViewController = self.tabBarController;
+    */
+    self.window.rootViewController = [[COScheduleViewControllerViewController alloc] initWithNibName:@"COScheduleViewControllerViewController" bundle:nil];
 
     [self performSelector:@selector(startDataManager) withObject:nil afterDelay:0.1];
     

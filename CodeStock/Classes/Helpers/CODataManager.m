@@ -118,7 +118,7 @@
 - (void)finishedLoading
 {
     [SVProgressHUD dismissWithSuccess:@"Done"];
-    [self buildRoomSessions];
+    //[self buildRoomSessions];
 }
 
 - (void)buildRoomSessions
@@ -158,6 +158,7 @@
     unsigned long long milliseconds = [[dateString substringWithRange:range] longLongValue];
     NSTimeInterval interval = milliseconds/1000;
     return [NSDate dateWithTimeIntervalSince1970:interval];
+    //return [[NSDate dateWithTimeIntervalSince1970:interval] dateByAddingTimeInterval:-60*60*4];
 }
 
 @end
